@@ -11,7 +11,11 @@
     
     />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo/style.css">
+    <script>
+        var nivel = window.location.search;
+        nivel = nivel.replace('?', '')
+    </script>
     
 </head>
 <body>
@@ -19,14 +23,21 @@
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-center">
-                    <img src="../imagens/game_over.png" alt="">
+                    <img src="imagens/vitoria.png" alt="">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-dark btn-lg" onclick="window.location.href='index.html'">Reiniciar</button>
+                    <button type="button" class="btn btn-dark btn-lg" onclick="window.location.href='app.html'">Reiniciar</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger btn-lg" onclick="window.location.href='index.html'">Pagina  inicial</button>
                 </div>
             </div>
         </div>
